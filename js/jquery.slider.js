@@ -202,7 +202,7 @@
     this.inputNode = $( node ).hide();
     						
 		this.settings.interval = this.settings.to-this.settings.from;
-		this.settings.value = this.inputNode.attr("value");
+		this.settings.value = this.inputNode.val();
 		
 		if( this.settings.calculate && $.isFunction( this.settings.calculate ) )
 		  this.nice = this.settings.calculate;
